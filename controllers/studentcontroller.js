@@ -15,7 +15,7 @@ const getStudents= async function (req,res){
     try{
         let students= await Student.find({}); 
         console.log(students);
-        res.end(students);
+        res.send(students);
 
     } catch(err){
         console.log(err);
