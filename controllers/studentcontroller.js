@@ -11,9 +11,9 @@ async function addStudents(req,res) {
         console.log(err);
     }
 }
-const getStudents= async function(req,res){
+const getStudents= async function (req,res){
     try{
-        let students= await Student.find({}); //select all data
+        let students= await Student.find({}); 
         console.log(students);
         res.end(students);
 
